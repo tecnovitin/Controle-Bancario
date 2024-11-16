@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "name": "windows-msvc-x64",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "${default}",
+            "intelliSenseMode": "windows-gcc-arm64",
+            "compilerArgs": [
+                ""
+            ],
+            "defines": [
+                "version=4"
+            ]
+        }
+    ],
+    "version": 4
+}

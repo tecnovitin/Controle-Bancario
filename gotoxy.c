@@ -2,6 +2,10 @@
 // dupla Victor
 
 //talvez erro
+#include <funcoes.h>
+
+
+
 void gotoxy(int x, int y){
     COORD coord;
     coord.X = (short)x;

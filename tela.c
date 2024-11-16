@@ -1,7 +1,7 @@
 //Bruno kenji
 //Dupla com Victor
 
-
+#include <funcoes.h>
 void tela() {
     int linha;
     system("cls");
