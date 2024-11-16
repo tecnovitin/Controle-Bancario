@@ -10,7 +10,7 @@ Subfunção.:Inclui no final da lista duplamente encadeada
 
 */
 
-#include<funcoes.h>
+#include "funcoes.h"
 
 void inserirNoInicio2(TipoLista2 *L2, movimentacao mv) {
     

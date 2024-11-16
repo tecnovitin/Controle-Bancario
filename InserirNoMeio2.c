@@ -10,7 +10,7 @@ Subfunção.:Inclui no meio da lista duplamente encadeada
 
 */
 
-#include<funcoes.h>
+#include "funcoes.h"
 
 void inserirNoMeio2(TipoLista2 *L2, movimentacao mv, int opc){
      Apontador p; 

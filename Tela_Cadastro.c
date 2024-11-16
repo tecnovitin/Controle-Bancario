@@ -1,4 +1,5 @@
-#include <funcoes.h>
+#include "funcoes.h"
+
 void Tela_Cadastro() {
     
     gotoxy(7,5);

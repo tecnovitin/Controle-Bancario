@@ -1,4 +1,4 @@
-#include <funcoes.h>
+#include "funcoes.h"
 
 void inicializarDuplamente(TipoLista2 *L2){
     L2->Primeiro = NULL;

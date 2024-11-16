@@ -2,7 +2,7 @@
 // dupla Victor
 
 //talvez erro
-#include <funcoes.h>
+#include "funcoes.h"
 
 
 
