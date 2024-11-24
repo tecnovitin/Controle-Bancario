@@ -1,7 +1,9 @@
 #include "funcoes.h"
 
-void Tela_Principal() {
+void Menu_Principal() {
     
+    int opcao;
+
     gotoxy(16,10);
     printf("1-Cadastro de Contas.....:");
 
