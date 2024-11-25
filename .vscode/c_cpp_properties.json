@@ -7,14 +7,14 @@
             ],
             "cStandard": "c11",
             "cppStandard": "${default}",
-            "intelliSenseMode": "windows-gcc-x64",
+            "intelliSenseMode": "macos-gcc-x86",
             "compilerArgs": [
                 ""
             ],
             "defines": [
                 "version=4"
             ],
-            "compilerPath": "C:/MinGW/bin/g++.exe"
+            "compilerPath": "C:/MinGW/bin/gcc.exe"
         }
     ],
     "version": 4
