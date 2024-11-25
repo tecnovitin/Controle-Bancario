@@ -1,4 +1,4 @@
-#include <funcoes.h>
+#include "funcoes.h"
 
 void FiltraOrdemNumerica(TipoLista *L){
 

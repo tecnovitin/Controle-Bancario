@@ -1,9 +1,4 @@
-
-
-
-
-
-#include<funcoes.h>
+#include "funcoes.h"
 
 void trocarContas(TipoApontador a, TipoApontador b) {
     conta_bancaria temp = a->conteudo;

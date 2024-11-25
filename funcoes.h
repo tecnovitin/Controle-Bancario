@@ -116,7 +116,7 @@ void trocarContas(TipoApontador a, TipoApontador b);
 void opcaoo (int opc);
 
 
-void filtraNumero(TipoLista * L, int numero);
+void FiltraNumero(TipoLista * L, int numero);
 
 void FiltraAlfabetica(TipoLista * L);
 

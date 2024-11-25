@@ -2,7 +2,7 @@
 
 
 
-#include <funcoes.h>
+#include "funcoes.h"
 
 void casdastrarmovi(){
   movimentacao mv;

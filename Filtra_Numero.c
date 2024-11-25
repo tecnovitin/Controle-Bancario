@@ -1,16 +1,15 @@
+#include "funcoes.h"
 
 
-
-
-#include <funcoes.h>
-
-
-void filtraNumero(TipoLista * L, int numero){
+void FiltraNumero(TipoLista * L, int numero){
 
     TipoApontador aux = L ->Primeiro;
+    char numero_str[20];
+    
+    sprintf(numero_str, "%d", numero);
 
     while (aux != NULL){
-        if (strcmp(aux->conteudo.numero_conta, numero) == 0){
+        if (strcmp(aux->conteudo.numero_conta, numero_str) == 0){
                 gotoxy(27 ,5);
                 printf("%s", aux->conteudo.banco);
                 gotoxy(27 ,7);
@@ -32,7 +31,7 @@ void filtraNumero(TipoLista * L, int numero){
 
     }
     gotoxy(12, 24);
-    printf("Conta com número %s não encontrada.", &numero);
+    printf("Conta com número %s não encontrada.", numero);
 
 
 }
