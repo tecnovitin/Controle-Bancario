@@ -19,6 +19,7 @@ typedef struct conta
     char tipo_conta[20];
     float vl_saldo;
     float vl_limite;
+    
     char status[10];
     
 } conta_bancaria;
@@ -30,6 +31,13 @@ typedef struct TipoItem
     conta_bancaria conteudo;
     TipoApontador proximo;
 } TipoItem;
+
+typedef struct TipoLista
+{
+    TipoApontador Primeiro;
+    TipoApontador Ultimo;
+    
+} TipoLista;
 //-----------------------------------------------------------------------------------------------------------||
 
 //Estrutura da movimentação das contas (duplamente encadeado)
@@ -37,7 +45,7 @@ typedef struct TipoItem
  typedef struct movimentacao
 {
     int sequencial;
-    int    codigo_conta;
+    char favorecido[50];
     char   dt_movimento[11];
     char   tp_movimentacao[15];
     double vl_movimento;
@@ -56,12 +64,7 @@ typedef struct TipoItem
 } Extrato;
 
 
-typedef struct
-{
-    TipoApontador Primeiro;
-    TipoApontador Ultimo;
-    
-} TipoLista;
+
 
 typedef struct TipoLista2{
 
@@ -87,6 +90,7 @@ void inserirNoMeio2(TipoLista2 *L, movimentacao mv, int opc);
 
 void inserirNoFinal2(TipoLista2 *L, movimentacao mv);
 
+
 void Tela_Consulta();
 
 void Tela_DebitoCredito();
@@ -105,12 +109,16 @@ void Cadastrar();
 
 void LimpaTela();
 
+void trocarContas(TipoApontador a, TipoApontador b); 
 
+void filtraNumero(TipoLista * L, int numero);
 
+void FiltraAlfabetica(TipoLista * L);
 
+void ordenarContasPorBancos(TipoLista* L);
 
+void ordenarContasPorNumero(TipoLista* L);
 
-
-
+void FiltraOrdemNumerica(TipoLista *L);
 
 #endif
