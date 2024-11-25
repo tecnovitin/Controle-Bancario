@@ -2,8 +2,6 @@
 
 void Menu_Contas() {
 
-    int opcao;
-
     gotoxy(16,8);
     printf("1-Cadastrar Contas Bancarias no Final");
 
@@ -32,9 +30,9 @@ void Menu_Contas() {
     printf("9-Retornar ao Menu Anterior");
     
     gotoxy(11,24);
-    scanf("%d", &opcao);
+    scanf("%d", &opc);
 
-    switch(opcao) {
+    switch(opc) {
         case 1:
         LimpaTela();
         Tela_Cadastro();

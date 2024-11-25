@@ -1,10 +1,8 @@
 #include "funcoes.h"
 
-void opcao (){
-
-    int opcao;
+void opcaoo (int opc){
 
     gotoxy(11,24);
-    scanf("$d", &opcao);
+    scanf("%d", &opc);
 
 }

@@ -2,8 +2,6 @@
 
 void Menu_Movimentacao(){
 
-    int opcao;
-
     gotoxy(16,8);
     printf("1-Movimentacao de Debito e Credito");
 
@@ -20,9 +18,9 @@ void Menu_Movimentacao(){
     printf("Opcao...:");
     
     gotoxy(11,24);
-    scanf("%d", &opcao);
+    scanf("%d", &opc);
 
-    switch(opcao) {
+    switch(opc) {
         case 1:
         LimpaTela();
         Tela_DebitoCredito();

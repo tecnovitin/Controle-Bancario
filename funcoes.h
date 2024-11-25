@@ -24,6 +24,8 @@ typedef struct conta
     
 } conta_bancaria;
 
+int opc;
+
 typedef struct TipoItem *TipoApontador;
 
 typedef struct TipoItem
@@ -110,6 +112,9 @@ void Cadastrar();
 void LimpaTela();
 
 void trocarContas(TipoApontador a, TipoApontador b); 
+
+void opcaoo (int opc);
+
 
 void filtraNumero(TipoLista * L, int numero);
 
