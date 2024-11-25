@@ -46,4 +46,7 @@ void Tela_DebitoCredito(){
 
     gotoxy(10,19);
     printf("5-Novo Saldo..............:");
+
+    getch();
+
 }

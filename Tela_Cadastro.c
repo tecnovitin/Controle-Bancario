@@ -1,7 +1,7 @@
 #include "funcoes.h"
 
 void Tela_Cadastro() {
-    
+  
     gotoxy(7,5);
     printf("Codigo da Conta...:                               ");
     gotoxy(7,7);
@@ -18,5 +18,7 @@ void Tela_Cadastro() {
     printf("6-Limite..........:                               ");
     gotoxy(7,19);
     printf("7-Status..........:                               ");
+
+    Cadastrar();
 
 }

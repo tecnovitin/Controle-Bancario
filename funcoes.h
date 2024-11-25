@@ -87,4 +87,30 @@ void inserirNoMeio2(TipoLista2 *L, movimentacao mv, int opc);
 
 void inserirNoFinal2(TipoLista2 *L, movimentacao mv);
 
+void Tela_Consulta();
+
+void Tela_DebitoCredito();
+
+void Tela_Transferencia();
+
+void Menu_Consulta();
+
+void Menu_Principal();
+
+void Menu_Movimentacao();
+
+void Menu_Contas();
+
+void Cadastrar();
+
+void LimpaTela();
+
+
+
+
+
+
+
+
+
 #endif

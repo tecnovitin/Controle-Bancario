@@ -2,6 +2,8 @@
 
 void Menu_Consulta(){
 
+    int opcao;
+
     gotoxy(16,8);
     printf("1-Consulta Geral Contas Bancarias");
 
@@ -17,4 +19,6 @@ void Menu_Consulta(){
     gotoxy(16,16);
     printf("4-Retornar ao Menu Anterior");
     
+    gotoxy(11,24);
+    scanf("$d", &opcao);
 }

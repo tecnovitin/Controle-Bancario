@@ -16,4 +16,20 @@ void Menu_Principal() {
     gotoxy(2,24);
     printf("Opcao...:");
 
+    gotoxy(11,24);
+    scanf("%d", &opcao);
+
+    switch(opcao) {
+        case 1:
+        LimpaTela();
+        Menu_Contas();
+        break;
+        case 2:
+        LimpaTela();
+        Menu_Movimentacao();
+        break;
+        case 3:
+        exit(0);
+    }
+
 }

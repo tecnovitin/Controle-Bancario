@@ -14,7 +14,7 @@
             "defines": [
                 "version=4"
             ],
-            "compilerPath": "C:/MinGW/bin/gcc.exe"
+            "compilerPath": "C:/MinGW/bin/g++.exe"
         }
     ],
     "version": 4

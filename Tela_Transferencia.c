@@ -2,6 +2,7 @@
 
 void Tela_Transferencia() {
 
+
     gotoxy(2,5);
     printf("-------C O N T A  O R I G E M --------+-------C O N T A  D E S T I N O-------");
 
@@ -42,7 +43,6 @@ void Tela_Transferencia() {
     gotoxy(19,17);
     printf("Data da Transferencia...:");
 
-
     gotoxy(40,6);
     printf("| Conta de Destino:");
 
@@ -69,4 +69,7 @@ void Tela_Transferencia() {
 
     gotoxy(40,14);
     printf("| Novo Saldo......:");
+
+    getch();
+
 }
