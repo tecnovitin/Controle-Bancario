@@ -49,6 +49,9 @@ void casdastrarmovi(conta_bancaria *conta){
       gotoxy(46,19);
       printf("%.2f", conta->vl_saldo);
 
-    void registrarMovimentacao(TipoLista2* L2, movimentacao* mv);
+     registrarMovimentacao(TipoLista2 *L2, movimentacao *mv);
 
 }
+
+
+
