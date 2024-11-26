@@ -141,4 +141,7 @@ void exibirMovimentacoes(conta_bancaria* conta);
 void casdastrarmovi(conta_bancaria *conta);
 
 void registrarMovimentacao(TipoLista2* L2, movimentacao* mv);
+
+void listarfun(TipoLista *L);
+
 #endif

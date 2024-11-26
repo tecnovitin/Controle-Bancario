@@ -29,5 +29,6 @@ void Cadastrar(){
 
     gotoxy(26, 17);
     scanf("%f", &cb.vl_limite);
+    
 
 }

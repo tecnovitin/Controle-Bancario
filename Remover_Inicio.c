@@ -18,6 +18,7 @@ void Remover_Inicio(TipoLista *L){
     }
 
     getch();
+    
     gotoxy("11,24");
     printf("                                                  ");
 

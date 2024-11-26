@@ -1,7 +1,7 @@
 #include "funcoes.h"
 
-void exibirMovimentacoes(conta_bancaria* conta) {  }
-  /*  TipoLista2* movimentacoes = &conta->movimentacao;
+void exibirMovimentacoes(conta_bancaria* conta) {  
+    TipoLista2* movimentacoes = &conta->movimentacao;
 
     if (movimentacoes->Primeiro == NULL) {
         gotoxy(11,24);

@@ -2,7 +2,9 @@
 
 void Menu_Consulta(){
 
-    int opcao;
+    int opc;
+    TipoLista L;
+    void listarfun(TipoLista *L);
 
     gotoxy(16,8);
     printf("1-Consulta Geral Contas Bancarias");
@@ -17,8 +19,37 @@ void Menu_Consulta(){
     printf("4-Consulta Por Ordem Alfabetica Contas Bancarias");
 
     gotoxy(16,16);
-    printf("4-Retornar ao Menu Anterior");
+    printf("5-Retornar ao Menu Anterior");
     
     gotoxy(11,24);
-    scanf("$d", &opcao);
+    scanf("%d", &opc);
+
+    switch(opc) {
+        case 1:
+            LimpaTela();
+            Tela_Cadastro();
+            listarfun(&L);
+        break;
+        case 2:
+            LimpaTela();
+            Tela_Cadastro();
+         //   FiltraNumero(&L);
+            break;
+        case 3:
+            LimpaTela();
+            Tela_Cadastro();
+            FiltraOrdemNumerica(&L);
+            break;
+        case 4:
+            LimpaTela();
+            Tela_Cadastro();
+            FiltraAlfabetica(&L);
+            break;
+        case 5:
+            LimpaTela();
+            Menu_Contas();
+            break;
+
+    }
+
 }

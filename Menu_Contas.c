@@ -47,6 +47,9 @@ void Menu_Contas() {
         Remover_Inicio(&L);
         Menu_Contas();
         break;
+        case 6:
+        LimpaTela();
+        Menu_Consulta();
         case 7:
         LimpaTela();
         Menu_Principal();
