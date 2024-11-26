@@ -1,7 +1,7 @@
 #include "funcoes.h"
 
 void registrarMovimentacao(TipoLista2* L2, movimentacao* mv) {
-    inicializaDuplamente();
+    inicializaDuplamente(L2);
     
     Apontador novaMov = (Apontador)malloc(sizeof(Extrato));
     if (novaMov == NULL) {

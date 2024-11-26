@@ -132,7 +132,7 @@ void ordenarContasPorNumero(TipoLista* L);
 
 void FiltraOrdemNumerica(TipoLista *L);
 
-void InserirNoInicio(TipoLista *L, conta_bancaria Nconta);
+void inserirNoInicio(TipoLista *L, conta_bancaria Nconta);
 
 void InserirNoFinal(TipoLista *L , conta_bancaria Nconta);
 
@@ -140,7 +140,9 @@ void InserirNaPosicao(TipoLista *L ,conta_bancaria Nconta, int opcao);
 
 void exibirMovimentacoes(conta_bancaria* conta);
 
-void casdastrarmovi(conta_bancaria *conta);
+void casdastrarmovi(conta_bancaria *conta, TipoLista2 *L2); //void casdastrarmovi(conta_bancaria *conta, TipoLista2 *L2)
+
+
 
 
 void registrarMovimentacao(TipoLista2* L2, movimentacao* mv);

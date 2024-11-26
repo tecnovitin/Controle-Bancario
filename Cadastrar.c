@@ -1,8 +1,12 @@
 #include "funcoes.h"
 
+void inserirNoInicio(TipoLista *L, conta_bancaria Nconta);
+//void InserirNoInicio(TipoLista *L, conta_bancaria Nconta, int opcao);
+
 void Cadastrar(){
 
     int opc;
+    TipoLista L;
     conta_bancaria cb;
 
     gotoxy(26, 5);
@@ -35,12 +39,12 @@ void Cadastrar(){
     switch (opc)
     {
     case 1:
-      inserirNoInicio(TipoLista *L, conta_bancaria Nconta);
+      inserirNoInicio(&L, cb); // (TipoLista *L, conta_bancaria Nconta)
       
         break;
     case 2:
     printf("a");
-      InserirNoInicio(TipoLista *L ,conta_bancaria Nconta, int opcao);
+     // InserirNoInicio(&L, cb); //(TipoLista *L ,conta_bancaria Nconta, int opcao)
     default:
         break;
     }
