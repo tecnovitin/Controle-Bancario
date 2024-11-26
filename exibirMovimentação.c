@@ -12,14 +12,13 @@ void exibirMovimentacoes(conta_bancaria* conta) {
     printf("%d:", conta->codigo_conta);
     
 
-for (int linha = 8; linha <= 22; linha++)
-{
-    
-
-
+    int linha = 8; //exibe A MOVIMENTAÇÕES APARTIR DA LINHA 8
     Apontador aux = movimentacoes->Primeiro;
-    
-    while (aux != NULL) {
+
+    //PERCORRE TODAS AS MOVIMENTAÇÕES  DA CONTA EXEIBE
+    while (aux != NULL && linha <= 22)
+    {
+
         gotoxy(2,linha);
         printf("%s", aux->conteudo.dt_movimento);
         gotoxy(13,linha);
@@ -30,8 +29,8 @@ for (int linha = 8; linha <= 22; linha++)
         printf("%.2f", aux->conteudo.vl_saldo);
        
         aux = aux->proximo;
- 
+        linha ++;
     }
 
-   }
 }
+

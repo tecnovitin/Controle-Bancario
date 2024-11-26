@@ -9,6 +9,43 @@
 #include <windows.h>
 
 
+
+
+
+//Estrutura da movimentação das contas (duplamente encadeado)
+
+ typedef struct movimentacao
+{
+    int sequencial;
+    int  codigo_conta;
+    char favorecido[50];
+    char   dt_movimento[11];
+    char   tp_movimentacao[15];
+    double vl_movimento;
+    double vl_saldo;
+
+} movimentacao;
+ 
+ 
+
+
+ typedef struct TipoExtrato *Apontador;
+
+ typedef struct TipoExtrato 
+ {
+    Apontador ante;
+    movimentacao conteudo;
+    Apontador proximo;
+} Extrato;
+
+
+typedef struct TipoLista2{
+
+    Apontador Primeiro;
+    Apontador Ultimo;
+}TipoLista2;
+
+//-----------------------------------------------------------------------------------------------------------||
 // Estrutura da Conta bancaria
 typedef struct conta
 {
@@ -40,40 +77,11 @@ typedef struct TipoLista
     TipoApontador Ultimo;
     TipoApontador prox;
 } TipoLista;
-//-----------------------------------------------------------------------------------------------------------||
 
-//Estrutura da movimentação das contas (duplamente encadeado)
  
- typedef struct movimentacao
-{
-    int sequencial;
-    int  codigo_conta;
-    char favorecido[50];
-    char   dt_movimento[11];
-    char   tp_movimentacao[15];
-    double vl_movimento;
-    double vl_saldo;
-
-} movimentacao;
- 
- 
- typedef struct TipoExtrato *Apontador;
-
- typedef struct TipoExtrato 
- {
-    Apontador ante;
-    movimentacao conteudo;
-    Apontador proximo;
-} Extrato;
 
 
 
-
-typedef struct TipoLista2{
-
-    Apontador Primeiro;
-    Apontador Ultimo;
-}TipoLista2;
 
 //--------------------------------------------------------------------------------------------------||
 
@@ -85,15 +93,10 @@ void tela();
 
 void Tela_Cadastro();
 
-void inicializarDuplamente(TipoLista2 *L2);
+void inicializaDuplamente(TipoLista2 *L2);
 
 void InicializaSimplismente(TipoLista *L);
 
-void inserirNoInicio2(TipoLista2 *L2, movimentacao mv);
-
-void inserirNoMeio2(TipoLista2 *L, movimentacao mv, int opc);
-
-void inserirNoFinal2(TipoLista2 *L, movimentacao mv);
 
 
 void Tela_Consulta();
@@ -133,4 +136,9 @@ void InserirNoInicio(TipoLista *L , int opcao);
 
 void InserirNoFinal(TipoLista *L , int opcao);
 
+void exibirMovimentacoes(conta_bancaria* conta);
+
+void casdastrarmovi(conta_bancaria *conta);
+
+void registrarMovimentacao(TipoLista2* L2, movimentacao* mv);
 #endif

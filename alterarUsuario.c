@@ -3,9 +3,7 @@
 #include <conio.h>
 #include <string.h>
 
-void alterarconta(TipoLista *L)
-{
-
+/*
     void alterarConta(TipoLista* L) {
     conta_bancaria con; // Declaração correta da variável de tipo conta_bancaria
     TipoApontador aux;  // Ponteiro para percorrer a lista
@@ -130,3 +128,4 @@ void alterarconta(TipoLista *L)
 
     } while (res == 1);
 }
+*/
