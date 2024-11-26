@@ -87,6 +87,8 @@ void Tela_Cadastro();
 
 void inicializarDuplamente(TipoLista2 *L2);
 
+void InicializaSimplismente(TipoLista *L);
+
 void inserirNoInicio2(TipoLista2 *L2, movimentacao mv);
 
 void inserirNoMeio2(TipoLista2 *L, movimentacao mv, int opc);
