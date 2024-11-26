@@ -126,15 +126,8 @@ void ordenarContasPorNumero(TipoLista* L);
 
 void FiltraOrdemNumerica(TipoLista *L);
 
-<<<<<<< HEAD
 void InserirNoInicio(TipoLista *L , int opcao);
 
 void InserirNoFinal(TipoLista *L , int opcao);
-=======
-void registrarMovimentacao(TipoLista2* L2, movimentacao* mv);
-
-void casdastrarmovi(conta_bancaria *conta);
-
->>>>>>> dc1edb2500732a6d1ad96b245d9f6bd27d5f5566
 
 #endif
