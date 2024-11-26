@@ -7,6 +7,7 @@
 #include <conio.h>
 #include <locale.h>
 #include <windows.h>
+#include <string.h>
 
 
 
@@ -78,7 +79,7 @@ typedef struct TipoLista
     TipoApontador prox;
 } TipoLista;
 
- 
+TipoApontador pesquisa(TipoLista* L, int codigo); ////////////////
 
 
 
@@ -142,7 +143,7 @@ void exibirMovimentacoes(conta_bancaria* conta);
 
 void casdastrarmovi(conta_bancaria *conta, TipoLista2 *L2); //void casdastrarmovi(conta_bancaria *conta, TipoLista2 *L2)
 
-
+//void pesquis(TipoLista* L, int codigo);
 
 
 void registrarMovimentacao(TipoLista2* L2, movimentacao* mv);
