@@ -1,7 +1,3 @@
-
-
-
-
 #include "funcoes.h"
 
 void casdastrarmovi(conta_bancaria *conta){

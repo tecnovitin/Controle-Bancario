@@ -38,7 +38,7 @@ typedef struct TipoLista
 {
     TipoApontador Primeiro;
     TipoApontador Ultimo;
-    
+    TipoApontador prox;
 } TipoLista;
 //-----------------------------------------------------------------------------------------------------------||
 
@@ -129,9 +129,8 @@ void ordenarContasPorNumero(TipoLista* L);
 
 void FiltraOrdemNumerica(TipoLista *L);
 
-void registrarMovimentacao(TipoLista2* L2, movimentacao* mv);
+void InserirNoInicio(TipoLista *L , int opcao);
 
-void casdastrarmovi(conta_bancaria *conta);
-
+void InserirNoFinal(TipoLista *L , int opcao);
 
 #endif

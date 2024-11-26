@@ -1,6 +1,5 @@
 #include "funcoes.h"
 
-
 void registrarMovimentacao(TipoLista2* L2, movimentacao* mv) {
     // Cria um novo nó para a movimentação
     Apontador novaMov = (Apontador)malloc(sizeof(Extrato));

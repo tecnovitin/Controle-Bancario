@@ -2,32 +2,27 @@
 
 void Menu_Contas() {
 
-    gotoxy(16,8);
-    printf("1-Cadastrar Contas Bancarias no Final");
-
-    gotoxy(16,9);
-    printf("2-Cadastrar Contas Bancarias no Inicio");
-
+    
     gotoxy(16,10);
-    printf("3-Cadastrar Contas Bancarias na Posicao");
+    printf("1-Cadastrar Contas Bancarias na Posicao");
 
     gotoxy(16,11);
-    printf("4-Remover Contas Bancarias no Final");
+    printf("2-Remover Contas Bancarias no Final");
 
     gotoxy(16,12);
-    printf("5-Remover Contas Bancarias no Inicio");
+    printf("3-Remover Contas Bancarias no Inicio");
 
     gotoxy(16,13);
-    printf("6-Remover Contas Bancarias na Posicao");
+    printf("4-Remover Contas Bancarias na Posicao");
 
     gotoxy(16,14);
-    printf("7-Alteracao de Conta Bancaria");
+    printf("5-Alteracao de Conta Bancaria");
 
     gotoxy(16,15);
-    printf("8-Consultar Contas Bancarias");
+    printf("6-Consultar Contas Bancarias");
 
     gotoxy(16,16);
-    printf("9-Retornar ao Menu Anterior");
+    printf("7-Retornar ao Menu Anterior");
     
     gotoxy(11,24);
     scanf("%d", &opc);
@@ -36,6 +31,7 @@ void Menu_Contas() {
         case 1:
         LimpaTela();
         Tela_Cadastro();
+        Cadastrar();
         break;
         case 2:
         LimpaTela();
@@ -45,7 +41,7 @@ void Menu_Contas() {
         LimpaTela();
         Tela_Cadastro();
         break;
-        case 9:
+        case 7:
         LimpaTela();
         Menu_Principal();
         
