@@ -46,6 +46,7 @@ typedef struct TipoLista
  typedef struct movimentacao
 {
     int sequencial;
+    int  codigo_conta;
     char favorecido[50];
     char   dt_movimento[11];
     char   tp_movimentacao[15];
@@ -125,8 +126,15 @@ void ordenarContasPorNumero(TipoLista* L);
 
 void FiltraOrdemNumerica(TipoLista *L);
 
+<<<<<<< HEAD
 void InserirNoInicio(TipoLista *L , int opcao);
 
 void InserirNoFinal(TipoLista *L , int opcao);
+=======
+void registrarMovimentacao(TipoLista2* L2, movimentacao* mv);
+
+void casdastrarmovi(conta_bancaria *conta);
+
+>>>>>>> dc1edb2500732a6d1ad96b245d9f6bd27d5f5566
 
 #endif
