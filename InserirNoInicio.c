@@ -1,5 +1,5 @@
 #include "funcoes.h"
-
+/*
 void InserirNoInicio(TipoLista *L , int opcao){
     
     TipoApontador p;
@@ -14,3 +14,4 @@ void InserirNoInicio(TipoLista *L , int opcao){
             L->Primeiro = p;
             }
 }
+*/

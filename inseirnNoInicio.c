@@ -7,7 +7,7 @@ TipoApontador p;
     p = (TipoApontador)malloc(sizeof(TipoItem));
 
     p->conteudo=Nconta;
-    p->proximo=NULL
+    p->proximo=NULL;
 
     if (L->Primeiro == NULL) {
             L->Primeiro = p;

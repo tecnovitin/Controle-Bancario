@@ -1,21 +1,21 @@
 {
-    "configurations": [
-        {
-            "name": "windows-msvc-x64",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "cStandard": "c11",
-            "cppStandard": "${default}",
-            "intelliSenseMode": "macos-gcc-x86",
-            "compilerArgs": [
-                ""
-            ],
-            "defines": [
-                "version=4"
-            ],
-            "compilerPath": "C:/MinGW/bin/gcc.exe"
-        }
-    ],
-    "version": 4
+  "configurations": [
+    {
+      "name": "windows-msvc-x64",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "cStandard": "c11",
+      "cppStandard": "${default}",
+      "intelliSenseMode": "windows-msvc-x64",
+      "compilerArgs": [
+        ""
+      ],
+      "defines": [
+        "version=4"
+      ],
+      "compilerPath": "cl.exe"
+    }
+  ],
+  "version": 4
 }

@@ -1,12 +1,12 @@
 #include "funcoes.h"
 
-void casdastrarmovi(conta_bancaria *conta){
+void casdastrarmovi(conta_bancaria *conta, TipoLista2 *L2){  //(conta_bancaria *conta)
 
  movimentacao mv;
 
     gotoxy(46, 15);
     fflush(stdin);
-    scanf(mv.dt_movimento, 11, stdin);
+    fgets(mv.dt_movimento, 11, stdin);  // de scanf para fgets
 
     gotoxy(46, 16);
     fflush(stdin);
@@ -23,7 +23,7 @@ void casdastrarmovi(conta_bancaria *conta){
         if ((conta->vl_saldo - mv.vl_movimento) < -conta->vl_limite)
         {
           gotoxy(11,24);
-          printf("Saldo insuficiente0");
+          printf("Saldo insuficiente");
           return;
         }
         conta->vl_saldo -= mv.vl_movimento; 
@@ -49,7 +49,7 @@ void casdastrarmovi(conta_bancaria *conta){
       gotoxy(46,19);
       printf("%.2f", conta->vl_saldo);
 
-     registrarMovimentacao(TipoLista2 *L2, movimentacao *mv);
+     registrarMovimentacao(L2, &mv);  //registrarMovimentacao(TipoLista2 *L2, movimentacao *mv);
 
 }
 
