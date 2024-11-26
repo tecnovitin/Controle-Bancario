@@ -7,7 +7,7 @@
             ],
             "cStandard": "c11",
             "cppStandard": "${default}",
-            "intelliSenseMode": "windows-gcc-x64",
+            "intelliSenseMode": "macos-gcc-x86",
             "compilerArgs": [
                 ""
             ],
