@@ -1,10 +1,15 @@
 #include "funcoes.h"
 
+void Remover_Final(TipoLista *L);
+void Remover_Inicio(TipoLista *L);
+
 void Menu_Contas() {
 
-    
+    TipoLista L;
+    InicializaSimplismente(&L);
+
     gotoxy(16,10);
-    printf("1-Cadastrar Contas Bancarias na Posicao");
+    printf("1-Cadastrar Contas Bancarias");
 
     gotoxy(16,11);
     printf("2-Remover Contas Bancarias no Final");
@@ -34,12 +39,13 @@ void Menu_Contas() {
         Cadastrar();
         break;
         case 2:
-        LimpaTela();
-        Tela_Cadastro();
+        Remover_Final(&L);
+        getch();
+        Menu_Contas();
         break;
         case 3:
-        LimpaTela();
-        Tela_Cadastro();
+        Remover_Inicio(&L);
+        Menu_Contas();
         break;
         case 7:
         LimpaTela();

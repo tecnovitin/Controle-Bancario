@@ -5,7 +5,7 @@
 
 /*
     void alterarConta(TipoLista* L) {
-    conta_bancaria con; // Declaração correta da variável de tipo conta_bancaria
+  /*  conta_bancaria con; // Declaração correta da variável de tipo conta_bancaria
     TipoApontador aux;  // Ponteiro para percorrer a lista
     int res, cam, status;
 
@@ -126,6 +126,6 @@
         printf("Deseja alterar outra Conta 1-Sim / 2-Nao: ");
         scanf("%d", &res);
 
-    } while (res == 1);
+    } while (res == 1);*/
 }
 */

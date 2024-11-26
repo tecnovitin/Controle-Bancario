@@ -25,4 +25,6 @@ void Remover_Final(TipoLista *L) {
     gotoxy(11, 24);
     printf("Funcionario removido no final!");
     getch();
+
 }
+
