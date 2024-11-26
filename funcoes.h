@@ -21,7 +21,6 @@ typedef struct conta
     float vl_limite;
     
     char status[10];
-    
 } conta_bancaria;
 
 int opc;
@@ -38,7 +37,7 @@ typedef struct TipoLista
 {
     TipoApontador Primeiro;
     TipoApontador Ultimo;
-    
+    TipoApontador prox;
 } TipoLista;
 //-----------------------------------------------------------------------------------------------------------||
 
@@ -125,5 +124,9 @@ void ordenarContasPorBancos(TipoLista* L);
 void ordenarContasPorNumero(TipoLista* L);
 
 void FiltraOrdemNumerica(TipoLista *L);
+
+void InserirNoInicio(TipoLista *L , int opcao);
+
+void InserirNoFinal(TipoLista *L , int opcao);
 
 #endif

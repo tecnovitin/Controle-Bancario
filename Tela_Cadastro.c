@@ -19,6 +19,4 @@ void Tela_Cadastro() {
     gotoxy(7,19);
     printf("7-Status..........:                               ");
 
-    Cadastrar();
-
 }
