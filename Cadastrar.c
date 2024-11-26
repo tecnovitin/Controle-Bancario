@@ -2,6 +2,7 @@
 
 void Cadastrar(){
 
+    int opc;
     conta_bancaria cb;
 
     gotoxy(26, 5);
@@ -30,5 +31,18 @@ void Cadastrar(){
     gotoxy(26, 17);
     scanf("%f", &cb.vl_limite);
     
+
+    switch (opc)
+    {
+    case 1:
+      inserirNoInicio(TipoLista *L, conta_bancaria Nconta);
+      
+        break;
+    case 2:
+    printf("a");
+      InserirNoInicio(TipoLista *L ,conta_bancaria Nconta, int opcao);
+    default:
+        break;
+    }
 
 }

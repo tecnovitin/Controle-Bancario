@@ -1,10 +1,13 @@
 #include "funcoes.h"
 
-void InserirNoFinal(TipoLista *L , int opcao) {
+void InserirNoFinal(TipoLista *L , conta_bancaria Nconta) {
 
     TipoApontador p;
 
     p = (TipoApontador)malloc(sizeof(TipoItem));
+
+    p->conteudo =Nconta;
+    p->proximo=NULL;
 
     if (L->Primeiro == NULL) {
             L->Primeiro = p;
