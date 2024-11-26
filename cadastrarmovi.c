@@ -43,6 +43,7 @@ void casdastrarmovi(conta_bancaria *conta){
       }
       conta ->vl_saldo += mv.vl_movimento;
       }else{
+        gotoxy(11,24 );
         printf("Tipo de Movimentação invalida");
         return;
       }

@@ -6,7 +6,7 @@
 
 
 
-// Função para ordenar as contas em ordem alfabética (Bubble Sort)
+// Função para ordenar as contas em ordem alfabética 
 void ordenarContasPorBancos(TipoLista* L) {
     if (L->Primeiro == NULL || L->Primeiro->proximo == NULL) {
         // Lista vazia ou com apenas um elemento, não precisa ordenar

@@ -21,7 +21,7 @@ typedef struct conta
     float vl_limite;
     
     char status[10];
-    
+    TipoLista2 movimentacao;
 } conta_bancaria;
 
 int opc;
