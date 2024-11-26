@@ -145,6 +145,7 @@ void casdastrarmovi(conta_bancaria *conta, TipoLista2 *L2); //void casdastrarmov
 
 //void pesquis(TipoLista* L, int codigo);
 
+void alterarConta(TipoLista* L);
 
 void registrarMovimentacao(TipoLista2* L2, movimentacao* mv);
 

@@ -2,6 +2,7 @@
 
 void Remover_Final(TipoLista *L);
 void Remover_Inicio(TipoLista *L);
+void alterarConta(TipoLista* L);
 
 void Menu_Contas() {
 
@@ -47,6 +48,10 @@ void Menu_Contas() {
         Remover_Inicio(&L);
         Menu_Contas();
         break;
+        case 5:
+        LimpaTela();
+        Tela_Cadastro();
+        alterarConta(&L);
         case 6:
         LimpaTela();
         Menu_Consulta();
