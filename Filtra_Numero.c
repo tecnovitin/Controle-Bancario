@@ -3,6 +3,11 @@
 
 void FiltraNumero(TipoLista * L, int numero){
 
+    gotoxy(12,24);
+    printf("Digite o numero da conta:");
+    gotoxy(45,24);
+    scanf("%d", &numero);
+
     TipoApontador aux = L ->Primeiro;
     char numero_str[20];
     

@@ -151,4 +151,7 @@ void registrarMovimentacao(TipoLista2* L2, movimentacao* mv);
 
 void listarfun(TipoLista *L);
 
+void alterarConta(TipoLista* L);
+
+void Transferencia(TipoLista *L);
 #endif

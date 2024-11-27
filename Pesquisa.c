@@ -1,4 +1,4 @@
-/*#include "funcoes.h"
+#include "funcoes.h"
 
 void pesquis(TipoLista* L, int codigo) {
 // Função de pesquisa que retorna um ponteiro para o nó encontrado ou NULL se não encontrado
@@ -15,4 +15,3 @@ void pesquis(TipoLista* L, int codigo) {
     return NULL; // Retorna NULL se a conta não for encontrada
 }
 }
-*/

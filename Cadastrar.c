@@ -1,7 +1,5 @@
 #include "funcoes.h"
 
-void inserirNoInicio(TipoLista *L, conta_bancaria Nconta);
-//void InserirNoInicio(TipoLista *L, conta_bancaria Nconta, int opcao);
 
 void Cadastrar(){
 

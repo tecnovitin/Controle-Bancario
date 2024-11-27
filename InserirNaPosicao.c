@@ -1,41 +1,36 @@
-/*#include "funcoes.h"
+#include "funcoes.h"
 
-void InserirNaPosicao(TipoLista *L, int posicao, int valor) {
-    TipoApontador p, novo;
-
-    // Aloca memória para o novo item
-    novo = (TipoApontador)malloc(sizeof(TipoItem));
-    novo->valor = valor;
-
-    if (posicao == 0) {
-        novo->proximo = L->Primeiro;
-        L->Primeiro = novo;
-        if (L->Ultimo == NULL) { 
-            L->Ultimo = novo;
-        }
+void InserirNaPosicao(TipoLista *L ,conta_bancaria Nconta, int opcao){
+    
+    if (opcao <= 0)
+    {
+        gotoxy();
+        printf("Posição invalida");
+        getch();
         return;
     }
+        TipoApontador p = (TipoApontador)malloc(sizeof(TipoItem));
 
-    p = L->Primeiro;
-    int i = 0;
+        p->conteudo=Nconta; 
+        p->proximo=NULL;    
 
-    while (p != NULL && i < posicao - 1) {
-        p = p->proximo;
-        i++;
-    }
+        TipoApontador aux = L->Primeiro;
+        int i = 1;
 
-    if (p != NULL) {
-        novo->proximo = p->proximo;
-        p->proximo = novo;
-
-        // Se estamos inserindo no final, atualiza o último
-        if (novo->proximo == NULL) {
-            L->Ultimo = novo;
+        while (aux != NULL && i < opcao - 1)
+        {
+            aux = aux->proximo;
+            i++;
         }
-    } else {
-        // Posição inválida (maior que o tamanho da lista)
-        free(novo); // Libera a memória do novo item
-        printf("Posição inválida!\n");
-    }
+        if (aux==NULL)
+        {
+            L->Ultimo->proximo=p;
+            L->Ultimo=p;
+        }
+        
+        p->proximo = aux->proximo;
+        aux->proximo = p;
+            
+        
+        
 }
-*/

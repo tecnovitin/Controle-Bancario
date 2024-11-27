@@ -2,7 +2,7 @@
 
 void Menu_Consulta(){
 
-    int opc;
+    int opc, numero;
     TipoLista L;
     void listarfun(TipoLista *L);
 
@@ -33,7 +33,8 @@ void Menu_Consulta(){
         case 2:
             LimpaTela();
             Tela_Cadastro();
-         //   FiltraNumero(&L);
+        
+            FiltraNumero(&L, numero);
             break;
         case 3:
             LimpaTela();

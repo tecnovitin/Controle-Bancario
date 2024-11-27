@@ -14,8 +14,9 @@ TipoApontador pesquisa(TipoLista* L, int codigo) {
 }
 
 
-void alterarConta(TipoLista* L) {
-    conta_bancaria con; // Declaração da variável de tipo conta_bancaria
+
+    void alterarConta(TipoLista* L) {
+    conta_bancaria con; // Declaração correta da variável de tipo conta_bancaria
     TipoApontador aux;  // Ponteiro para percorrer a lista
     int res, cam, status;
 
@@ -120,3 +121,5 @@ void alterarConta(TipoLista* L) {
 
     } while (res == 1);
 }
+
+  
