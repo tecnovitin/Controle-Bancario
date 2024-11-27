@@ -1,10 +1,10 @@
 #include "funcoes.h"
 
-void cadastrarmovi(TipoLista *L, TipoLista2 *L2){  
+void cadastrarmovi(conta_bancaria * conta, TipoLista2 *L2){  
   int codConta;
   movimentacao mv;
   TipoApontador aux;
-  conta_bancaria * conta = NULL;
+  
     
     do
     {
@@ -12,9 +12,9 @@ void cadastrarmovi(TipoLista *L, TipoLista2 *L2){
     gotoxy(38,6);
     scanf("%d", &codConta);
     getch();
-      aux = L->Primeiro;
+      aux = L2->Primeiro;
     while (aux != NULL) {
-        if (aux->conteudo.codigo_conta == codigo_conta) {
+        if (aux->conteudo.codigo_conta == codConta) {
             conta = &(aux->conteudo);
             break;
         }
@@ -24,8 +24,8 @@ void cadastrarmovi(TipoLista *L, TipoLista2 *L2){
         gotoxy(11,24 );
         printf("Conta nao encontrada.");
         getch();
-        gotoxy(11,24 )
-        printf("                       ")
+        gotoxy(11,24 );
+        printf("                       ");
       
        }
     }while(conta == NULL);

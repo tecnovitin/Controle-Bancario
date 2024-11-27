@@ -4,12 +4,18 @@
 
 
 int main (){
-    
+TipoLista L; 
+
+
+TipoLista contas;
+
+int main (){
+
     tela();
+    InicializaSimplismente(&contas);
     carregarCT("contas.dat", &contas);
     Menu_Principal();
 
-   // getch();
-
 return 0;
+}
 }

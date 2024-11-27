@@ -1,5 +1,5 @@
 
-#
+#include "funcoes.h"
 
 void salvarCT(const char *nome_arquivo, TipoLista *contas) {
     FILE *arquivo = fopen(nome_arquivo, "wb");

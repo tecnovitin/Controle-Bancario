@@ -4,7 +4,7 @@ void InserirNaPosicao(TipoLista *L ,conta_bancaria Nconta, int opcao){
     
     if (opcao <= 0)
     {
-        gotoxy();
+        gotoxy(11,24);
         printf("Posição invalida");
         getch();
         return;

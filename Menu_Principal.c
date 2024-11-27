@@ -2,6 +2,11 @@
 
 void Menu_Principal() {
     
+    conta_bancaria conta;
+    TipoLista2 L2;
+    TipoLista L;
+    inicializarSimplesmente(TipoLista *L);
+    inicializarDuplamente(TipoLista2 *L2);
     int opcao;
 
     gotoxy(16,10);
@@ -26,7 +31,7 @@ void Menu_Principal() {
         break;
         case 2:
         LimpaTela();
-        Menu_Movimentacao();
+        Menu_Movimentacao(&conta, &L2, &L);
         break;
         case 3:
         exit(0);

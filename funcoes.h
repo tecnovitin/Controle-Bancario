@@ -88,7 +88,7 @@ TipoApontador pesquisa(TipoLista* L, int codigo); ////////////////
 
 //funções:
 
-void gotoxy();
+void gotoxy(int x, int y);
 
 void tela();
 
@@ -110,7 +110,7 @@ void Menu_Consulta();
 
 void Menu_Principal();
 
-void Menu_Movimentacao();
+void Menu_Movimentacao(conta_bancaria *conta, TipoLista2 *L2, TipoLista *L);
 
 void Menu_Contas();
 
@@ -141,7 +141,7 @@ void InserirNaPosicao(TipoLista *L ,conta_bancaria Nconta, int opcao);
 
 void exibirMovimentacoes(conta_bancaria* conta);
 
-void cadastrarmovi(conta_bancaria *conta, TipoLista2 *L2); //void casdastrarmovi(conta_bancaria *conta, TipoLista2 *L2)
+void cadastrarmovi(conta_bancaria * conta, TipoLista2 *L2); //void casdastrarmovi(conta_bancaria *conta, TipoLista2 *L2)
 
 //void pesquis(TipoLista* L, int codigo);
 
