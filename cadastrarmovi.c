@@ -1,6 +1,6 @@
 #include "funcoes.h"
 
-void casdastrarmovi(conta_bancaria *conta, TipoLista2 *L2){  //(conta_bancaria *conta) /
+void cadastrarmovi(conta_bancaria *conta, TipoLista2 *L2){  //(conta_bancaria *conta) /
 
  movimentacao mv;
 

@@ -141,7 +141,7 @@ void InserirNaPosicao(TipoLista *L ,conta_bancaria Nconta, int opcao);
 
 void exibirMovimentacoes(conta_bancaria* conta);
 
-void casdastrarmovi(conta_bancaria *conta, TipoLista2 *L2); //void casdastrarmovi(conta_bancaria *conta, TipoLista2 *L2)
+void cadastrarmovi(conta_bancaria *conta, TipoLista2 *L2); //void casdastrarmovi(conta_bancaria *conta, TipoLista2 *L2)
 
 //void pesquis(TipoLista* L, int codigo);
 

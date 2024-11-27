@@ -1,6 +1,10 @@
 #include "funcoes.h"
 
-void Menu_Movimentacao(){
+
+TipoLista L; // Inicialize conforme necessário
+
+void Menu_Movimentacao(conta_bancaria *conta, TipoLista2 *L2, TipoLista *L){ //void Menu_Movimentacao(conta_bancaria *conta, TipoLista2 *L2){
+    int opc;
 
     gotoxy(16,8);
     printf("1-Movimentacao de Debito e Credito");
@@ -24,13 +28,17 @@ void Menu_Movimentacao(){
         case 1:
         LimpaTela();
         Tela_DebitoCredito();
+        cadastrarmovi(conta, L2);
         break;
         case 2:
         LimpaTela();
         Tela_Transferencia();
+        Transferencia(L);
+        break;
         case 3:
         LimpaTela();
         Tela_Consulta();
+        exibirMovimentacoes(conta);
         break;
         case 4:
         LimpaTela();
