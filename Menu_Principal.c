@@ -1,13 +1,13 @@
 #include "funcoes.h"
 
 void Menu_Principal() {
-    
+
     conta_bancaria conta;
     TipoLista2 L2;
     TipoLista L;
-    inicializarSimplesmente(TipoLista *L);
-    inicializarDuplamente(TipoLista2 *L2);
-    int opcao;
+    InicializaSimplismente(&L);
+    inicializaDuplamente(&L2);
+    int opc;
 
     gotoxy(16,10);
     printf("1-Cadastro de Contas.....:");

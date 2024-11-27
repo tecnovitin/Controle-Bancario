@@ -94,11 +94,13 @@ void tela();
 
 void Tela_Cadastro();
 
-void inicializaDuplamente(TipoLista2 *L2);
+//void inicializaDuplamente(TipoLista2 *L2);
+
+//void InicializaSimplismente(TipoLista *L);
 
 void InicializaSimplismente(TipoLista *L);
 
-
+void inicializaDuplamente(TipoLista2 *L2);
 
 void Tela_Consulta();
 
@@ -141,7 +143,7 @@ void InserirNaPosicao(TipoLista *L ,conta_bancaria Nconta, int opcao);
 
 void exibirMovimentacoes(conta_bancaria* conta);
 
-void cadastrarmovi(conta_bancaria * conta, TipoLista2 *L2); //void casdastrarmovi(conta_bancaria *conta, TipoLista2 *L2)
+void cadastrarmovi(conta_bancaria *localconta, TipoLista2 *L2, TipoLista *L); //void casdastrarmovi(conta_bancaria *conta, TipoLista2 *L2)
 
 //void pesquis(TipoLista* L, int codigo);
 

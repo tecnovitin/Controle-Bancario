@@ -1,18 +1,19 @@
 #include "funcoes.h"
 
-void cadastrarmovi(conta_bancaria * conta, TipoLista2 *L2){  
+void cadastrarmovi(conta_bancaria *localconta, TipoLista2 *L2, TipoLista *L){
   int codConta;
-  movimentacao mv;
-  TipoApontador aux;
+  movimentacao mv ;
+  TipoApontador aux = NULL;
+  conta_bancaria *conta = NULL;
   
     
     do
     {
-  
+    LimpaTela();
     gotoxy(38,6);
     scanf("%d", &codConta);
-    getch();
-      aux = L2->Primeiro;
+    
+      aux = L->Primeiro;
     while (aux != NULL) {
         if (aux->conteudo.codigo_conta == codConta) {
             conta = &(aux->conteudo);
@@ -52,7 +53,7 @@ void cadastrarmovi(conta_bancaria * conta, TipoLista2 *L2){
     fgets(mv.favorecido, 50, stdin);
 
     gotoxy(46, 18);
-    scanf("%.2f", &mv.vl_movimento);
+    scanf("%f", &mv.vl_movimento);
 
       if (strcmp(mv.tp_movimentacao, "Debito")==0){
         if ((conta->vl_saldo - mv.vl_movimento) < -conta->vl_limite)
@@ -91,6 +92,3 @@ void cadastrarmovi(conta_bancaria * conta, TipoLista2 *L2){
     getch();
     printf("                                     ");
 }
-
-
-

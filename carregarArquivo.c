@@ -1,7 +1,7 @@
 #include "funcoes.h"
 
-void inicializarSimplesmente(TipoLista *L);
-void inicializarDuplamente(TipoLista2 *L2);
+void InicializaSimplismente(TipoLista *L);
+void inicializaDuplamente(TipoLista2 *L2);
 
 void carregarCT(const char *nome_arquivo, TipoLista *contas) {
     FILE *arquivo = fopen(nome_arquivo, "rb");
@@ -10,7 +10,7 @@ void carregarCT(const char *nome_arquivo, TipoLista *contas) {
         return;
     }
 
-    inicializarSimplesmente(contas);
+    InicializaSimplismente(contas);
 
     // Lê a quantidade de contas
     int quantidade;
@@ -29,7 +29,7 @@ void carregarCT(const char *nome_arquivo, TipoLista *contas) {
         fread(&(novaConta->conteudo), sizeof(conta_bancaria), 1, arquivo);
 
         // Inicializa a lista de transações
-        inicializarDuplamente(&(novaConta->conteudo.movimentacao));
+        inicializaDuplamente(&(novaConta->conteudo.movimentacao));
 
         // Lê a quantidade de transações
         int quantidadeMov;

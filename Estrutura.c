@@ -15,7 +15,6 @@ int main (){
     InicializaSimplismente(&contas);
     carregarCT("contas.dat", &contas);
     Menu_Principal();
-
 return 0;
 }
 }

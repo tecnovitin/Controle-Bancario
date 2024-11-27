@@ -28,7 +28,7 @@ void Menu_Movimentacao(conta_bancaria *conta, TipoLista2 *L2, TipoLista *L){ //v
         case 1:
         LimpaTela();
         Tela_DebitoCredito();
-        cadastrarmovi(conta, L2);
+        cadastrarmovi(conta, L2, L);
         break;
         case 2:
         LimpaTela();
