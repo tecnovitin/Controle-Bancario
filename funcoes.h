@@ -94,9 +94,6 @@ void tela();
 
 void Tela_Cadastro();
 
-//void inicializaDuplamente(TipoLista2 *L2);
-
-//void InicializaSimplismente(TipoLista *L);
 
 void InicializaSimplismente(TipoLista *L);
 
@@ -116,7 +113,7 @@ void Menu_Movimentacao(conta_bancaria *conta, TipoLista2 *L2, TipoLista *L);
 
 void Menu_Contas();
 
-void Cadastrar();
+void Cadastrar(TipoLista *L);
 
 void LimpaTela();
 
@@ -139,7 +136,7 @@ void inserirNoInicio(TipoLista *L, conta_bancaria Nconta);
 
 void InserirNoFinal(TipoLista *L , conta_bancaria Nconta);
 
-void InserirNaPosicao(TipoLista *L ,conta_bancaria Nconta, int opcao);
+void InserirNaPosicao(TipoLista *L ,conta_bancaria Nconta, int opc);
 
 void exibirMovimentacoes(conta_bancaria* conta);
 
@@ -160,5 +157,7 @@ void Transferencia(TipoLista *L);
 void carregarCT(const char *nome_arquivo, TipoLista *contas);
 
 void salvarCT(const char *nome_arquivo, TipoLista *contas);
+
+void limparOpc();
 
 #endif

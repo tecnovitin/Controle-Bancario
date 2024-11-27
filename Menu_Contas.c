@@ -37,7 +37,7 @@ void Menu_Contas() {
         case 1:
         LimpaTela();
         Tela_Cadastro();
-        Cadastrar();
+        Cadastrar(&L);
         break;
         case 2:
         Remover_Final(&L);

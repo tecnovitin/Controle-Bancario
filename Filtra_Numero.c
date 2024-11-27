@@ -14,7 +14,7 @@ void FiltraNumero(TipoLista * L, int numero){
     sprintf(numero_str, "%d", numero);
 
     while (aux != NULL){
-        if (strcmp(aux->conteudo.numero_conta, numero_str) == 0){
+        if (strcmp(aux->conteudo.numero_conta, numero_str) == numero){
                 gotoxy(27 ,5);
                 printf("%s", aux->conteudo.banco);
                 gotoxy(27 ,7);
@@ -27,6 +27,7 @@ void FiltraNumero(TipoLista * L, int numero){
                 printf("%.2f", aux->conteudo.vl_limite);
                 gotoxy(27 ,15);
                 printf("%.2f", aux->conteudo.vl_saldo);
+                getch();
                 return;
 
         }

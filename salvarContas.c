@@ -49,5 +49,5 @@ void salvarCT(const char *nome_arquivo, TipoLista *contas) {
     }
 
     fclose(arquivo);
-    printf("Contas e transações salvas com sucesso em %s.\n", nome_arquivo);
+    printf("Contas e transacoes salvas com sucesso em %s.\n", nome_arquivo);
 }

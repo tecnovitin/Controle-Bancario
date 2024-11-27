@@ -23,6 +23,9 @@ void Menu_Principal() {
 
     gotoxy(11,24);
     scanf("%d", &opc);
+    gotoxy(11,24);
+    printf("                             ");
+
 
     switch(opc) {
         case 1:

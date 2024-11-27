@@ -9,12 +9,14 @@ TipoLista L;
 
 TipoLista contas;
 
-int main (){
+
 
     tela();
     InicializaSimplismente(&contas);
     carregarCT("contas.dat", &contas);
+   
     Menu_Principal();
+    salvarCT("contas.dat", &contas);
 return 0;
-}
+
 }

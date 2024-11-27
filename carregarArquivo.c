@@ -6,7 +6,11 @@ void inicializaDuplamente(TipoLista2 *L2);
 void carregarCT(const char *nome_arquivo, TipoLista *contas) {
     FILE *arquivo = fopen(nome_arquivo, "rb");
     if (arquivo == NULL) {
-        printf("Erro ao abrir o arquivo para leitura.\n");
+        gotoxy(11, 24);
+        printf("Erro ao alocar memoria para a transacao.");
+                getch();
+                gotoxy(11, 24);
+                printf("                                                    ");
         return;
     }
 
@@ -20,7 +24,11 @@ void carregarCT(const char *nome_arquivo, TipoLista *contas) {
         // Cria uma nova conta
         TipoApontador novaConta = (TipoApontador)malloc(sizeof(TipoItem));
         if (novaConta == NULL) {
-            printf("Erro ao alocar memória para a conta.\n");
+            gotoxy(11, 24);
+                printf("Erro ao alocar memoria para a transacao.");
+                getch();
+                gotoxy(11, 24);
+                printf("                                                    ");
             fclose(arquivo);
             return;
         }
@@ -39,9 +47,14 @@ void carregarCT(const char *nome_arquivo, TipoLista *contas) {
             // Cria uma nova transação
             Extrato *novaMov = (Extrato *)malloc(sizeof(Extrato));
             if (novaMov == NULL) {
-                printf("Erro ao alocar memória para a transação.\n");
+                gotoxy(11, 24);
+                printf("Erro ao alocar memoria para a transacao.");
+                getch();
+                gotoxy(11, 24);
+                printf("                                                    ");
                 fclose(arquivo);
                 return;
+
             }
 
             // Lê os dados da transação
@@ -74,5 +87,9 @@ void carregarCT(const char *nome_arquivo, TipoLista *contas) {
     }
 
     fclose(arquivo);
-    printf("Contas e transações carregadas com sucesso de %s.\n", nome_arquivo);
+    gotoxy(11, 24);
+    printf("Contas e transacoes carregadas com sucesso de %s.\n", nome_arquivo);
+                getch();
+                gotoxy(11, 24);
+                printf("                                                                          ");
 }
