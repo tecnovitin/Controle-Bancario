@@ -1,7 +1,10 @@
-// Bruno kenji
-// dupla Victor
+/*
+AUTOR........: Bruno Kenji 168899-2024
+EQUIPE.......: Victor Gabriel 160612-202
+...... .......160612-2023- VICTOR GABRIEL;
+FUNÇÃO DO COD: TROCAR DE AS CONTAS BANCARIAS.
 
-//talvez erro
+*/
 #include "funcoes.h"
 
 

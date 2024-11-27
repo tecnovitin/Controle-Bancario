@@ -1,15 +1,23 @@
+/*
+AUTOR........: Bruno Kenji 168899-2024
+EQUIPE.......: Victor Gabriel 160612-202
+...... .......160612-2023- VICTOR GABRIEL;
+FUNÇÃO DO COD: TROCAR DE AS CONTAS BANCARIAS.
+
+*/
+
 #include "funcoes.h"
 
 void pesquis(TipoLista* L, int codigo) {
-// Função de pesquisa que retorna um ponteiro para o nó encontrado ou NULL se não encontrado
+
     TipoApontador pesquisa(TipoLista* L, int codigo) {
-    TipoApontador atual = L->Primeiro; // Acesso ao primeiro nó da lista
+    TipoApontador atual = L->Primeiro; 
     
     while (atual != NULL) {
         if (atual->conteudo.codigo_conta == codigo) {
-            return atual; // Retorna o ponteiro para o nó encontrado
+            return atual; 
         }
-        atual = atual->proximo; // Avança para o próximo nó
+        atual = atual->proximo; 
     }
 
     return NULL; // Retorna NULL se a conta não for encontrada
