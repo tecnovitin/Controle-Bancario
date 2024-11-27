@@ -10,6 +10,12 @@ void exibirMovimentacoes(conta_bancaria* conta) {
     }
     gotoxy(9,4);
     printf("%d:", conta->codigo_conta);
+
+    if(conta == 0) {
+        LimpaTela();       
+        Menu_Principal();
+        return;
+    }
     
 
     int linha = 8; //exibe A MOVIMENTAÇÕES APARTIR DA LINHA 8

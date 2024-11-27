@@ -4,13 +4,9 @@
 
 
 int main (){
-TipoLista L; 
-
-
-TipoLista contas;
-
-
-
+    TipoLista L; 
+    TipoLista contas;
+    
     tela();
     InicializaSimplismente(&contas);
     carregarCT("contas.dat", &contas);

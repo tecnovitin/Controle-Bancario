@@ -9,9 +9,9 @@ void FiltraOrdemNumerica(TipoLista *L){
 
     if (aux==NULL)
     {
-         gotoxy(12, 24);
+        gotoxy(12, 24);
         printf("A lista está vazia.");
-        return;
+        Menu_Consulta();
     }
     while (aux != NULL)
     {
@@ -31,5 +31,6 @@ void FiltraOrdemNumerica(TipoLista *L){
 
     }
     
+    Menu_Consulta();
 
 }

@@ -8,6 +8,11 @@ void FiltraNumero(TipoLista * L, int numero){
     gotoxy(45,24);
     scanf("%d", &numero);
 
+    if(numero == 0) {
+        LimpaTela();
+        Menu_Principal();
+    }
+
     TipoApontador aux = L ->Primeiro;
     char numero_str[20];
     
@@ -39,5 +44,5 @@ void FiltraNumero(TipoLista * L, int numero){
     gotoxy(12, 24);
     printf("Conta com número %s não encontrada.", numero);
 
-
+    Menu_Consulta();
 }

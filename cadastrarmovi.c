@@ -12,6 +12,12 @@ void cadastrarmovi(conta_bancaria *localconta, TipoLista2 *L2, TipoLista *L){
     LimpaTela();
     gotoxy(38,6);
     scanf("%d", &codConta);
+
+    if(codConta == 0){
+      LimpaTela();
+      Menu_Principal();
+      return;
+    }
     
       aux = L->Primeiro;
     while (aux != NULL) {

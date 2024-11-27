@@ -50,7 +50,7 @@ void Menu_Contas() {
         break;
         case 5:
         LimpaTela();
-        Tela_Cadastro();
+        //Tela_Cadastro();
         alterarConta(&L);
         case 6:
         LimpaTela();

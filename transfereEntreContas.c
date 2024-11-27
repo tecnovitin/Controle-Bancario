@@ -11,6 +11,12 @@ do
 
     gotoxy(18,6);
     scanf("%d", &conta_O);
+
+    if(conta_O == 0) {
+        LimpaTela();      
+        Menu_Principal();
+        return;
+    }
    
     
 
