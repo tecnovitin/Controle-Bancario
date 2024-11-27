@@ -1,7 +1,7 @@
 // Bruno kenji
 // dupla Victor
 
-//talvez erro
+
 #include "funcoes.h"
 
 

@@ -1,3 +1,11 @@
+/*
+AUTOR........: VICTOR GABRIEL DA SILVA
+EQUIPE.......: 168899-2024- BRUNO KENJI;
+...... .......160612-2023- VICTOR GABRIEL;
+FUNÇÃO DO COD: FAZ TRANSFERENCIA ENTRE AS CONTAS.
+
+*/
+
 #include "funcoes.h"
 
 void Transferencia(TipoLista *L){

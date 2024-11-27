@@ -1,11 +1,9 @@
 #include "funcoes.h"
 
-void Remover_Final(TipoLista *L);
-void Remover_Inicio(TipoLista *L);
-void alterarConta(TipoLista* L);
+
 
 void Menu_Contas() {
-
+    int opc;
     TipoLista L;
     InicializaSimplismente(&L);
 

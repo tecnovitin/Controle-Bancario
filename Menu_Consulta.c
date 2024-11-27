@@ -4,7 +4,7 @@ void Menu_Consulta(){
 
     int opc, numero;
     TipoLista L;
-    void listarfun(TipoLista *L);
+    InicializaSimplismente(&L);
 
     gotoxy(16,8);
     printf("1-Consulta Geral Contas Bancarias");

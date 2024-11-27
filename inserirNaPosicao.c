@@ -1,7 +1,12 @@
+*/
+
+
 #include "funcoes.h"
 
 void InserirNaPosicao(TipoLista *L, conta_bancaria Nconta, int opc) {
     
+     TipoApontador p= NULL;
+    InicializaSimplismente(L);
     if (opc <= 0) {
         gotoxy(11, 24);
         printf("Posição inválida");
@@ -9,7 +14,7 @@ void InserirNaPosicao(TipoLista *L, conta_bancaria Nconta, int opc) {
         return;
     }
 
-    TipoApontador p = (TipoApontador)malloc(sizeof(TipoItem));
+    p = (TipoApontador)malloc(sizeof(TipoItem));
     p->conteudo = Nconta;
     p->proximo = NULL;
 

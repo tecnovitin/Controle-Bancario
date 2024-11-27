@@ -1,3 +1,10 @@
+/*
+AUTOR........: VICTOR GABRIEL DA SILVA
+EQUIPE.......: 168899-2024- BRUNO KENJI;
+...... .......160612-2023- VICTOR GABRIEL;
+FUNÇÃO DO COD: FILTRA AS CONTAS POR ORDEM NUMERICA.
+
+*/
 #include "funcoes.h"
 
 void FiltraOrdemNumerica(TipoLista *L){

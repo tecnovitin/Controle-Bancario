@@ -1,3 +1,10 @@
+/*
+AUTOR........: VICTOR GABRIEL DA SILVA
+EQUIPE.......: 168899-2024- BRUNO KENJI;
+...... .......160612-2023- VICTOR GABRIEL;
+FUNÇÃO DO COD: FILTRA A CONTA BANCARIA POR UM NUMERO ESPECIFICO.
+
+*/
 #include "funcoes.h"
 
 
@@ -5,8 +12,11 @@ void FiltraNumero(TipoLista * L, int numero){
 
     gotoxy(12,24);
     printf("Digite o numero da conta:");
+    
     gotoxy(45,24);
     scanf("%d", &numero);
+    gotoxy(12,24);
+    printf("                                                                         ");
 
     if(numero == 0) {
         LimpaTela();
