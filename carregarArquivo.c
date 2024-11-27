@@ -1,6 +1,7 @@
 #include "funcoes.h"
 
-
+void inicializarSimplesmente(TipoLista *L);
+void inicializarDuplamente(TipoLista2 *L2);
 
 void carregarCT(const char *nome_arquivo, TipoLista *contas) {
     FILE *arquivo = fopen(nome_arquivo, "rb");
