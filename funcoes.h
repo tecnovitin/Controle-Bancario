@@ -154,4 +154,9 @@ void listarfun(TipoLista *L);
 void alterarConta(TipoLista* L);
 
 void Transferencia(TipoLista *L);
+
+void carregarCT(const char *nome_arquivo, TipoLista *contas);
+
+void salvarCT(const char *nome_arquivo, TipoLista *contas);
+
 #endif

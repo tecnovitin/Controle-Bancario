@@ -1,14 +1,49 @@
 #include "funcoes.h"
 
-void cadastrarmovi(conta_bancaria *conta, TipoLista2 *L2){  //(conta_bancaria *conta) /
+void cadastrarmovi(TipoLista *L, TipoLista2 *L2){  
+  int codConta;
+  movimentacao mv;
+  TipoApontador aux;
+  conta_bancaria * conta = NULL;
+    
+    do
+    {
+  
+    gotoxy(38,6);
+    scanf("%d", &codConta);
+    getch();
+      aux = L->Primeiro;
+    while (aux != NULL) {
+        if (aux->conteudo.codigo_conta == codigo_conta) {
+            conta = &(aux->conteudo);
+            break;
+        }
+        aux = aux->proximo;
+    }
+       if (conta == NULL) {
+        gotoxy(11,24 );
+        printf("Conta nao encontrada.");
+        getch();
+        gotoxy(11,24 )
+        printf("                       ")
+      
+       }
+    }while(conta == NULL);
 
- movimentacao mv;
-
-    gotoxy(46, 15);
+      gotoxy(28, 8);
+    printf("%s", conta->banco);
+    gotoxy(28, 9);
+    printf("%s", conta->agencia);
+    gotoxy(28, 10);
+    printf("%s", conta->numero_conta);
+    gotoxy(28, 11);
+    printf("%.2f", conta->vl_saldo);
+    gotoxy(28, 12);
+    printf("%.2f", conta->vl_limite);
+    gotoxy(38, 15);
     fflush(stdin);
-    fgets(mv.dt_movimento, 11, stdin);  // de scanf para fgets
-
-    gotoxy(46, 16);
+    fgets(mv.dt_movimento, 11, stdin);  
+    gotoxy(38, 16);
     fflush(stdin);
     fgets(mv.tp_movimentacao, 15, stdin);
 
@@ -51,6 +86,10 @@ void cadastrarmovi(conta_bancaria *conta, TipoLista2 *L2){  //(conta_bancaria *c
 
      registrarMovimentacao(L2, &mv);  //registrarMovimentacao(TipoLista2 *L2, movimentacao *mv);
 
+    gotoxy(11, 24);
+    printf("Movimentacao cadastrada com sucesso!");
+    getch();
+    printf("                                     ");
 }
 
 

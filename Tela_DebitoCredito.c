@@ -2,8 +2,6 @@
 
 void Tela_DebitoCredito(){
 
-    gotoxy(10,5);
-    printf("Sequencia de Movimentacao.:");
 
     gotoxy(10,6);
     printf("Codigo da Conta...........:");
