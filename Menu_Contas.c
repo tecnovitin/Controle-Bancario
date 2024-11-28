@@ -4,8 +4,7 @@
 
 void Menu_Contas() {
     int opc;
-    TipoLista L;
-    InicializaSimplismente(&L);
+    //TipoLista L;
 
     gotoxy(16,10);
     printf("1-Cadastrar Contas Bancarias");

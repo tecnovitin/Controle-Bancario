@@ -80,7 +80,7 @@ typedef struct TipoLista
 
 TipoApontador pesquisa(TipoLista* L, int codigo); ////////////////
 
-
+TipoLista L;
 
 
 //--------------------------------------------------------------------------------------------------||

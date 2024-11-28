@@ -11,8 +11,8 @@ FUNÇÃO DO COD: TROCAR DE AS CONTAS BANCARIAS.
 void Menu_Consulta(){
 
     int opc, numero;
-    TipoLista L;
-    InicializaSimplismente(&L);
+   // TipoLista L;
+ //   InicializaSimplismente(&L);
 
     gotoxy(16,8);
     printf("1-Consulta Geral Contas Bancarias");

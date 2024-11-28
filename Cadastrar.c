@@ -19,10 +19,8 @@ void Cadastrar(TipoLista* L){
     do
     {
         
-
-
         gotoxy(26, 5);  
-        fflush(stdin);
+       // fflush(stdin);
         scanf("%d", &Nconta.codigo_conta);
 
         aux = L->Primeiro;
@@ -91,7 +89,7 @@ void Cadastrar(TipoLista* L){
                 
                 gotoxy(11, 24);
                 printf("                        ");
-                
+                LimpaTela();
                 Menu_Contas();
                 break;
             case 2:
@@ -105,6 +103,7 @@ void Cadastrar(TipoLista* L){
                 getch();
                  gotoxy(11, 24);
                 printf("                        ");
+                LimpaTela();
                 Menu_Contas();
                 break;
             case 3:
@@ -113,7 +112,8 @@ void Cadastrar(TipoLista* L){
                 getch();
                  gotoxy(11, 24);
                 printf("                        ");
-                Menu_Contas();  // Inserir no final da lista
+                LimpaTela();
+                Menu_Contas(); 
                 break;
             default:
                 gotoxy(11, 24);

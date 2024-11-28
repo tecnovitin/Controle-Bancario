@@ -6,7 +6,7 @@
 void InserirNaPosicao(TipoLista *L, conta_bancaria Nconta, int opc) {
     
      TipoApontador p= NULL;
-    InicializaSimplismente(L);
+   // InicializaSimplismente(L);
     if (opc <= 0) {
         gotoxy(11, 24);
         printf("Posição inválida");

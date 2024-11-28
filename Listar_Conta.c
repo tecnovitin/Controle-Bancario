@@ -1,9 +1,7 @@
 #include "funcoes.h"
 
 void listarfun(TipoLista *L) {
-    InicializaSimplismente(L);
-    TipoApontador p = NULL;
-     p=L->Primeiro;
+    TipoApontador p = L->Primeiro; // Não inicialize a lista aqui
 
     if (p == NULL) {
         gotoxy(11, 24);
@@ -13,7 +11,6 @@ void listarfun(TipoLista *L) {
     }
 
     while (p != NULL) {
-        
         gotoxy(27, 5);
         printf("%d", p->conteudo.codigo_conta);
         gotoxy(27, 7);
@@ -25,7 +22,7 @@ void listarfun(TipoLista *L) {
         gotoxy(27, 13);
         printf("%s", p->conteudo.tipo_conta);
         gotoxy(27, 15);
-        printf("%s", p->conteudo.vl_saldo);
+        printf("%.2f", p->conteudo.vl_saldo); 
         gotoxy(27, 17);
         printf("%.2f", p->conteudo.vl_limite);
 

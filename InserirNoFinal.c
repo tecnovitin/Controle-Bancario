@@ -11,7 +11,7 @@ FUNÇÃO DO COD: TROCAR DE AS CONTAS BANCARIAS.
 void InserirNoFinal(TipoLista *L , conta_bancaria Nconta) {
 
     TipoApontador p= NULL;
-    InicializaSimplismente(L);
+    
 
     p = (TipoApontador)malloc(sizeof(TipoItem));
 
@@ -26,3 +26,5 @@ void InserirNoFinal(TipoLista *L , conta_bancaria Nconta) {
                 L->Ultimo = p;
             }
 }
+
+    
