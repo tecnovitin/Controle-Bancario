@@ -1,3 +1,11 @@
+
+/*
+AUTOR........: VICTOR GABRIEL DA SILVA
+EQUIPE.......: 168899-2024- BRUNO KENJI;
+...... .......160612-2023- VICTOR GABRIEL;
+FUNÇÃO DO COD: CADASTRA UMA CONTA NO BANCO.
+
+*/
 #include "funcoes.h"
 
 
@@ -80,11 +88,10 @@ void Cadastrar(TipoLista* L){
         switch (opc) {
             case 1:
                 inserirNoInicio(L, Nconta);
-                printf("Cadastrado com sucesso"); 
-                getch();
+                
                 gotoxy(11, 24);
                 printf("                        ");
-                getch();
+                
                 Menu_Contas();
                 break;
             case 2:

@@ -62,7 +62,6 @@ typedef struct conta
     TipoLista2 movimentacao;
 } conta_bancaria;
 
-int opc;
 
 typedef struct TipoItem *TipoApontador;
 
@@ -76,7 +75,7 @@ typedef struct TipoLista
 {
     TipoApontador Primeiro;
     TipoApontador Ultimo;
-    TipoApontador prox;
+   
 } TipoLista;
 
 TipoApontador pesquisa(TipoLista* L, int codigo); ////////////////
@@ -159,5 +158,9 @@ void carregarCT(const char *nome_arquivo, TipoLista *contas);
 void salvarCT(const char *nome_arquivo, TipoLista *contas);
 
 void limparOpc();
+
+void Remover_Final(TipoLista *L);
+
+void Remover_Inicio(TipoLista *L);
 
 #endif

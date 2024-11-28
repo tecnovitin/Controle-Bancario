@@ -1,15 +1,12 @@
-/*
-AUTOR........: Bruno Kenji 168899-2024
-EQUIPE.......: Victor Gabriel 160612-202
-...... .......160612-2023- VICTOR GABRIEL;
-FUNÇÃO DO COD: TROCAR DE AS CONTAS BANCARIAS.
 
-*/
+
 
 #include "funcoes.h"
 
 void InserirNaPosicao(TipoLista *L, conta_bancaria Nconta, int opc) {
     
+     TipoApontador p= NULL;
+    InicializaSimplismente(L);
     if (opc <= 0) {
         gotoxy(11, 24);
         printf("Posição inválida");
@@ -17,7 +14,7 @@ void InserirNaPosicao(TipoLista *L, conta_bancaria Nconta, int opc) {
         return;
     }
 
-    TipoApontador p = (TipoApontador)malloc(sizeof(TipoItem));
+    p = (TipoApontador)malloc(sizeof(TipoItem));
     p->conteudo = Nconta;
     p->proximo = NULL;
 

@@ -1,7 +1,9 @@
 #include "funcoes.h"
 
 void listarfun(TipoLista *L) {
-    TipoApontador p = L->Primeiro;
+    InicializaSimplismente(L);
+    TipoApontador p = NULL;
+     p=L->Primeiro;
 
     if (p == NULL) {
         gotoxy(11, 24);

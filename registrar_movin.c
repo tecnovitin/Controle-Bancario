@@ -1,3 +1,12 @@
+
+/*
+AUTOR........: VICTOR GABRIEL DA SILVA
+EQUIPE.......: 168899-2024- BRUNO KENJI;
+...... .......160612-2023- VICTOR GABRIEL;
+FUNÇÃO DO COD: COLOCA O REGISTRO NA LISTA DUPLAMENTE.
+
+*/
+
 #include "funcoes.h"
 
 void registrarMovimentacao(TipoLista2* L2, movimentacao* mv) {

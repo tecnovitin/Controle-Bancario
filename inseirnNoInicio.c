@@ -9,8 +9,9 @@ FUNÇÃO DO COD: TROCAR DE AS CONTAS BANCARIAS.
 #include "funcoes.h"
 
 void inserirNoInicio(TipoLista *L, conta_bancaria Nconta){
-    //creia uma nova conta
-TipoApontador p;
+    TipoApontador p= NULL;
+    InicializaSimplismente(L);
+
 
     p = (TipoApontador)malloc(sizeof(TipoItem));
 
@@ -24,4 +25,6 @@ TipoApontador p;
             p->proximo = L->Primeiro;
             L->Primeiro = p;
             }
+        printf("Cadastrado com sucesso"); 
+        getch();
 }

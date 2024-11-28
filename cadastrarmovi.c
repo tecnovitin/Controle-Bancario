@@ -10,6 +10,9 @@ FUNÇÃO DO COD: TROCAR DE AS CONTAS BANCARIAS.
 
 void cadastrarmovi(conta_bancaria *localconta, TipoLista2 *L2, TipoLista *L){
   int codConta;
+   
+    InicializaSimplismente(L);
+    inicializaDuplamente(L2);
   movimentacao mv ;
   TipoApontador aux = NULL;
   conta_bancaria *conta = NULL;
